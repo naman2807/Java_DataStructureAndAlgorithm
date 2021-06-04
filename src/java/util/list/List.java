@@ -92,4 +92,11 @@ public interface List<E> {
      * @return true if this list contains no elements.
      */
     boolean isEmpty();
+
+    /**
+     * Removes the element at the specified position in this list
+     * @param index - position of element which is to be removed.
+     * @return - element at specified index.
+     */
+    E remove(int index);
 }
