@@ -1,5 +1,7 @@
 package java.util.list;
 
+import java.util.Collection;
+
 /**
  * Created By: Naman Agarwal
  * User ID: naman2807
@@ -24,4 +26,12 @@ public interface List<E> {
      * @return boolean value
      */
     boolean add(int index, E item);
+
+    /**
+     * Appends all of the elements in the specified collection to the end of this list,
+     * in the order that they are returned by the specified collection's iterator
+     * @param c - list of items which is to be added
+     * @return - boolean value.
+     */
+    boolean addAll(Collection<? extends E> c);
 }
