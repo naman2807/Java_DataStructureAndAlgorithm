@@ -68,4 +68,10 @@ public interface List<E> {
      * @return boolean value.
      */
     boolean equals(Object item);
+
+    /**
+     * @param index - position of element which is to be returned.
+     * @return element of type E.
+     */
+    E get(int index);
 }
