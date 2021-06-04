@@ -121,4 +121,9 @@ public interface List<E> {
      * @return old element which is replaced.
      */
     E set(int index, E item);
+
+    /**
+     * @return number of elements in this list.
+     */
+    int size();
 }
