@@ -42,4 +42,9 @@ public interface List<E> {
      * @return boolean value
      */
     boolean addAll(int index, Collection<? extends E> c);
+
+    /**
+     * Removes all of the elements from this list
+     */
+    void clear();
 }
