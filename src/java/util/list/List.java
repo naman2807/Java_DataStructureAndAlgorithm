@@ -11,9 +11,17 @@ package java.util.list;
 public interface List<E> {
 
     /**
-     * Adds the passed item to the list.
-     * @param item
+     * Appends the specified element to the end of the list
+     * @param item - element to be added in list.
      * @return boolean value
      */
     boolean add(E item);
+
+    /**
+     * Inserts the specified element at the specified position in the list
+     * @param index - index at which the element has to be added.
+     * @param item - element which is to be added.
+     * @return boolean value
+     */
+    boolean add(int index, E item);
 }
