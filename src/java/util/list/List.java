@@ -9,4 +9,11 @@ package java.util.list;
  */
 
 public interface List<E> {
+
+    /**
+     * Adds the passed item to the list.
+     * @param item
+     * @return boolean value
+     */
+    boolean add(E item);
 }
