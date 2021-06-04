@@ -106,4 +106,11 @@ public interface List<E> {
      * @return boolean value
      */
     boolean remove(Object item);
+
+    /**
+     * Removes from this list all of its elements that are contained in the specified collection
+     * @param c - list of items which is to be removed.
+     * @return boolean value
+     */
+    boolean removeAll(Collection<? extends E> c);
 }
