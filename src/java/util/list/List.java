@@ -61,4 +61,11 @@ public interface List<E> {
      * @return Returns true if this list contains all of the elements of the specified collection.
      */
     boolean containsAll(Collection<? extends E> c);
+
+    /**
+     * Compares the specified object with this list for equality.
+     * @param item - element which is to be equated.
+     * @return boolean value.
+     */
+    boolean equals(Object item);
 }
