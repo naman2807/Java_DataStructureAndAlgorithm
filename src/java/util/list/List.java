@@ -99,4 +99,11 @@ public interface List<E> {
      * @return - element at specified index.
      */
     E remove(int index);
+
+    /**
+     * Removes the first occurrence of the specified element from this list, if it is present
+     * @param item - element which is to be removed.
+     * @return boolean value
+     */
+    boolean remove(Object item);
 }
