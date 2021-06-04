@@ -47,4 +47,11 @@ public interface List<E> {
      * Removes all of the elements from this list
      */
     void clear();
+
+    /**
+     * Checks whether the item is present in the list.
+     * @param item - element which is to be checked.
+     * @return - Returns true if this list contains the specified element.
+     */
+    boolean contains(Object item);
 }
