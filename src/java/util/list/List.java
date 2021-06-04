@@ -34,4 +34,12 @@ public interface List<E> {
      * @return - boolean value.
      */
     boolean addAll(Collection<? extends E> c);
+
+    /**
+     * Inserts all of the elements in the specified collection into this list at the specified position
+     * @param index - position at which the list has to be added.
+     * @param c - list of items which is to be added.
+     * @return boolean value
+     */
+    boolean addAll(int index, Collection<? extends E> c);
 }
