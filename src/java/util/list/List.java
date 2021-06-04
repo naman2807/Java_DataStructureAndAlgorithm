@@ -74,4 +74,10 @@ public interface List<E> {
      * @return element of type E.
      */
     E get(int index);
+
+    /**
+     * Evaluates the hashcode of the list.
+     * @return hash code value for this list.
+     */
+    int hashCode();
 }
