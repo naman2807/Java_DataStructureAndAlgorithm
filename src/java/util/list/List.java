@@ -8,5 +8,5 @@ package java.util.list;
  * Date: 04-06-2021
  */
 
-public interface List {
+public interface List<E> {
 }
