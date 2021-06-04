@@ -80,4 +80,11 @@ public interface List<E> {
      * @return hash code value for this list.
      */
     int hashCode();
+
+    /**
+     * @param item - element whose index is to be returned.
+     * @return  index of the first occurrence of the specified element in this list,
+     *          or -1 if this list does not contain the element.
+     */
+    int indexOf(Object item);
 }
