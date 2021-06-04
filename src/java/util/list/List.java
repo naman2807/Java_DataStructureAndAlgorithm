@@ -54,4 +54,11 @@ public interface List<E> {
      * @return - Returns true if this list contains the specified element.
      */
     boolean contains(Object item);
+
+    /**
+     * Checks whether the list of items is present in the list.
+     * @param c - list of elements which is to be checked.
+     * @return Returns true if this list contains all of the elements of the specified collection.
+     */
+    boolean containsAll(Collection<? extends E> c);
 }
