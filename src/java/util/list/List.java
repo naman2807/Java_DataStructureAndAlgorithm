@@ -113,4 +113,12 @@ public interface List<E> {
      * @return boolean value
      */
     boolean removeAll(Collection<? extends E> c);
+
+    /**
+     * Replaces the element at the specified position in this list with the specified element
+     * @param index - position of element which is to be replaced.
+     * @param item - new element which is to be added.
+     * @return old element which is replaced.
+     */
+    E set(int index, E item);
 }
