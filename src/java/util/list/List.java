@@ -87,4 +87,9 @@ public interface List<E> {
      *          or -1 if this list does not contain the element.
      */
     int indexOf(Object item);
+
+    /**
+     * @return true if this list contains no elements.
+     */
+    boolean isEmpty();
 }
