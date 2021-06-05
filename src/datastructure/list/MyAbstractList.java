@@ -1,7 +1,8 @@
-package java.datastructure.linear.list;
+package datastructure.list;
+
+import datastructure.list.MyList;
 
 import java.util.Collection;
-import java.util.ListIterator;
 
 /**
  * Created By: Naman Agarwal
@@ -57,4 +58,8 @@ public abstract class MyAbstractList<E> implements MyList<E> {
         throw new UnsupportedOperationException();
     }
 
+    @Override
+    public int size() {
+        return 0;
+    }
 }
