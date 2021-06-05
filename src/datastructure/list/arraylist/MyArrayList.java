@@ -3,6 +3,7 @@ package datastructure.list.arraylist;
 import datastructure.list.MyAbstractList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Iterator;
 
 /**
  * Created By: Naman Agarwal
@@ -136,5 +137,10 @@ public class MyArrayList<E> extends MyAbstractList<E> {
     private void reallocate(int capacity){
         this.DEFAULT_CAPACITY += capacity;
         this.list = Arrays.copyOf(this.list, DEFAULT_CAPACITY);
+    }
+
+    @Override
+    public Iterator<E> iterator() {
+        return Arrays.stream(this.list).iterator();
     }
 }
