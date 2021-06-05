@@ -8,5 +8,5 @@ package java.datastructure.linear.list.arraylist;
  * Date: 05-06-2021
  */
 
-public class MyArrayList {
+public class MyArrayList<E> {
 }
