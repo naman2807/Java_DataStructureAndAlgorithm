@@ -1,6 +1,8 @@
 package datastructure.list;
 
 import java.util.Collection;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 /**
  * Created By: Naman Agarwal
@@ -126,4 +128,8 @@ public interface MyList<E> {
      * @return number of elements in this list.
      */
     int size();
+
+    default Stream<E> stream() {
+        return StreamSupport.stream(spliterator(), false);
+    }
 }
