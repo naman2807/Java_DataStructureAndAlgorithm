@@ -94,4 +94,8 @@ public class MyArrayList<E> extends MyAbstractList<E> {
     public int size() {
         return 0;
     }
+
+    private void reallocate(int size){
+
+    }
 }
