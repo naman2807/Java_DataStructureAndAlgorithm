@@ -123,7 +123,7 @@ public class MyArrayList<E> extends MyAbstractList<E> {
 
     @Override
     public int size() {
-        return 0;
+        return this.size;
     }
 
     private void reallocate(int capacity){
