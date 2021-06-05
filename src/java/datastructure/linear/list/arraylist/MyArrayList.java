@@ -16,6 +16,10 @@ public class MyArrayList<E> extends MyAbstractList<E> {
     private Object[] list;
     private int DEFAULT_CAPACITY = 10;
 
+    public MyArrayList(){
+        this.list = new Object[DEFAULT_CAPACITY];
+    }
+
     @Override
     public boolean add(E item) {
         return super.add(item);
