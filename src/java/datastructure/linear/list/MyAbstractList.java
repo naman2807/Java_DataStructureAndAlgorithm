@@ -10,7 +10,7 @@ import java.util.Collection;
  * Date: 05-06-2021
  */
 
-public class MyAbstractList<E> implements MyList<E> {
+public abstract class MyAbstractList<E> implements MyList<E> {
     @Override
     public boolean add(E item) {
         return false;
