@@ -24,10 +24,11 @@ public class MyArrayList<E> extends MyAbstractList<E> {
 
     @Override
     public boolean add(E item) {
-        if(list.length == DEFAULT_CAPACITY){
+        if(size == DEFAULT_CAPACITY){
             reallocate(10);
         }
         this.list[size()] = item;
+        size++;
         return true;
     }
 
@@ -101,8 +102,8 @@ public class MyArrayList<E> extends MyAbstractList<E> {
         return 0;
     }
 
-    private void reallocate(int size){
-        this.DEFAULT_CAPACITY += size;
+    private void reallocate(int capacity){
+        this.DEFAULT_CAPACITY += capacity;
         this.list = Arrays.copyOf(this.list, DEFAULT_CAPACITY);
     }
 }
