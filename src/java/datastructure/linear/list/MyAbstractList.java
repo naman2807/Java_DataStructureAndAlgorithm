@@ -1,6 +1,7 @@
 package java.datastructure.linear.list;
 
 import java.util.Collection;
+import java.util.ListIterator;
 
 /**
  * Created By: Naman Agarwal
@@ -56,58 +57,4 @@ public abstract class MyAbstractList<E> implements MyList<E> {
         throw new UnsupportedOperationException();
     }
 
-    @Override
-    public void clear() {
-
-    }
-
-    @Override
-    public boolean contains(Object item) {
-        return false;
-    }
-
-    @Override
-    public boolean containsAll(Collection<? extends E> c) {
-        return false;
-    }
-
-    @Override
-    public E get(int index) {
-        return null;
-    }
-
-    @Override
-    public int indexOf(Object item) {
-        return 0;
-    }
-
-    @Override
-    public boolean isEmpty() {
-        return false;
-    }
-
-    @Override
-    public E remove(int index) {
-        return null;
-    }
-
-    @Override
-    public boolean remove(Object item) {
-        return false;
-    }
-
-    @Override
-    public boolean removeAll(Collection<? extends E> c) {
-        return false;
-    }
-
-    @Override
-    public E set(int index, E item) {
-        return null;
-    }
-
-    @Override
-    public int size() {
-        return 0;
-    }
 }
