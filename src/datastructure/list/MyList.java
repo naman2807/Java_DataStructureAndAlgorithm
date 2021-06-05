@@ -1,6 +1,8 @@
 package datastructure.list;
 
 import java.util.Collection;
+import java.util.Spliterator;
+import java.util.Spliterators;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
@@ -12,7 +14,7 @@ import java.util.stream.StreamSupport;
  * Date: 04-06-2021
  */
 
-public interface MyList<E> {
+public interface MyList<E> extends Iterable<E>{
 
     /**
      * Appends the specified element to the end of the list
@@ -131,5 +133,9 @@ public interface MyList<E> {
 
     default Stream<E> stream() {
         return StreamSupport.stream(spliterator(), false);
+    }
+
+    default Spliterator<E> spliterator() {
+        return Spliterators.spliterator(new MyList[]{this}, 0);
     }
 }
