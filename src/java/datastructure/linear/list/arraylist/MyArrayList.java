@@ -32,6 +32,12 @@ public class MyArrayList<E> extends MyAbstractList<E> {
         return add(size(), item);
     }
 
+    /**
+     * Adds element to specified index.
+     * @param index - index at which the element has to be added.
+     * @param item - element which is to be added.
+     * @return boolean value.
+     */
     @Override
     public boolean add(int index, E item) {
         if(index < 0 || index > DEFAULT_CAPACITY){
