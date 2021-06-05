@@ -26,7 +26,8 @@ public class MyArrayList<E> extends MyAbstractList<E> {
         if(list.length == DEFAULT_CAPACITY){
             reallocate(10);
         }
-
+        this.list[size()] = item;
+        return true;
     }
 
     @Override
