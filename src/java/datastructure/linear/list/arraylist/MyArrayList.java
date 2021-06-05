@@ -36,8 +36,9 @@ public class MyArrayList<E> extends MyAbstractList<E> {
             throw new ArrayIndexOutOfBoundsException("Invalid Index");
         }else if(this.size == DEFAULT_CAPACITY){
             reallocate(10);
-            this.list[index] = item;
         }
+        this.list[index] = item;
+        size++;
     }
 
     @Override
