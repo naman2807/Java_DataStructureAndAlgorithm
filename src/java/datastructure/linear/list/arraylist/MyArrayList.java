@@ -24,9 +24,6 @@ public class MyArrayList<E> extends MyAbstractList<E> {
 
     @Override
     public boolean add(E item) {
-        if(this.size == DEFAULT_CAPACITY){
-            reallocate(10);
-        }
         return add(size(), item);
     }
 
@@ -44,7 +41,7 @@ public class MyArrayList<E> extends MyAbstractList<E> {
 
     @Override
     public boolean addAll(Collection<? extends E> c) {
-        return super.addAll(c);
+        return addAll(size(), c);
     }
 
     @Override
