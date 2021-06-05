@@ -16,6 +16,7 @@ public class MyArrayList<E> extends MyAbstractList<E> {
 
     private Object[] list;
     private int DEFAULT_CAPACITY = 10;
+    private int size;
 
     public MyArrayList(){
         this.list = new Object[DEFAULT_CAPACITY];
