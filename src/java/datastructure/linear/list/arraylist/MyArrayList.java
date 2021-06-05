@@ -14,6 +14,7 @@ import java.util.Collection;
 public class MyArrayList<E> extends MyAbstractList<E> {
 
     private Object[] list;
+    private int DEFAULT_CAPACITY = 10;
 
     @Override
     public boolean add(E item) {
