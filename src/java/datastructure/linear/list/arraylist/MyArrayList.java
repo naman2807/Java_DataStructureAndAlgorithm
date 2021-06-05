@@ -22,6 +22,11 @@ public class MyArrayList<E> extends MyAbstractList<E> {
         this.list = new Object[DEFAULT_CAPACITY];
     }
 
+    /**
+     * Adds value to ArrayList by calling other overloaded method.
+     * @param item - element to be added in list.
+     * @return boolean value
+     */
     @Override
     public boolean add(E item) {
         return add(size(), item);
