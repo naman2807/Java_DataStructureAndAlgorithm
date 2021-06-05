@@ -8,5 +8,5 @@ package java.datastructure.linear.list;
  * Date: 05-06-2021
  */
 
-public class MyAbstractList<E> {
+public class MyAbstractList<E> implements MyList<E> {
 }
