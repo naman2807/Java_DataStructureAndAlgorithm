@@ -31,7 +31,7 @@ public abstract class MyAbstractList<E> implements MyList<E> {
      */
     @Override
     public boolean add(int index, E item) {
-        return false;
+        throw new UnsupportedOperationException();
     }
 
     /**
@@ -45,9 +45,15 @@ public abstract class MyAbstractList<E> implements MyList<E> {
         return false;
     }
 
+    /**
+     * Adds collection of items to list.
+     * @param index - position at which the list has to be added.
+     * @param c - list of items which is to be added.
+     * @return  UnsupportedOperationException
+     */
     @Override
     public boolean addAll(int index, Collection<? extends E> c) {
-        return false;
+        throw new UnsupportedOperationException();
     }
 
     @Override
