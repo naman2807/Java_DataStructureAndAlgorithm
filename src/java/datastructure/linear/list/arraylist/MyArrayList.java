@@ -24,18 +24,18 @@ public class MyArrayList<E> extends MyAbstractList<E> {
 
     @Override
     public boolean add(E item) {
-        if(size == DEFAULT_CAPACITY){
+        if(this.size == DEFAULT_CAPACITY){
             reallocate(10);
         }
-        this.list[size()] = item;
-        size++;
-        return true;
+        return add(size(), item);
     }
 
     @Override
     public boolean add(int index, E item) {
         if(index < 0 || index > DEFAULT_CAPACITY){
             throw new ArrayIndexOutOfBoundsException("Invalid Index");
+        }else if(this.size == DEFAULT_CAPACITY){
+            reallocate(10);
         }
     }
 
