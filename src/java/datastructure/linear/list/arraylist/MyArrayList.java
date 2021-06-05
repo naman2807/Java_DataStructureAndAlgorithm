@@ -97,6 +97,7 @@ public class MyArrayList<E> extends MyAbstractList<E> {
 
     private void reallocate(int size){
         this.DEFAULT_CAPACITY += size;
+        this.list = new Object[DEFAULT_CAPACITY];
 
     }
 }
