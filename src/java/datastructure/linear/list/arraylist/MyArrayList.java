@@ -16,7 +16,7 @@ public class MyArrayList<E> extends MyAbstractList<E> {
 
     private Object[] list;
     private int DEFAULT_CAPACITY = 10;
-    private int size;
+    private int size = 0;
 
     public MyArrayList(){
         this.list = new Object[DEFAULT_CAPACITY];
@@ -45,8 +45,10 @@ public class MyArrayList<E> extends MyAbstractList<E> {
         }else if(this.size == DEFAULT_CAPACITY){
             reallocate(10);
         }
+        for(int i = size() ; i > index; i--){
+            this.list[i] = this.list[i-1];
+        }
         this.list[index] = item;
-        size++;
         return true;
     }
 
@@ -66,6 +68,7 @@ public class MyArrayList<E> extends MyAbstractList<E> {
             throw new ArrayIndexOutOfBoundsException("Invalid Index");
         }
         reallocate(c.size());
+        return true;
     }
 
     @Override
