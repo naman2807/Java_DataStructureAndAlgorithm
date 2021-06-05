@@ -13,6 +13,8 @@ import java.util.Collection;
 
 public class MyArrayList<E> extends MyAbstractList<E> {
 
+    private Object[] list;
+
     @Override
     public boolean add(E item) {
         return super.add(item);
