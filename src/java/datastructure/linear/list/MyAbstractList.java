@@ -34,8 +34,14 @@ public abstract class MyAbstractList<E> implements MyList<E> {
         return false;
     }
 
+    /**
+     * This method calls another overloaded method to add collection of elements.
+     * @param c - list of items which is to be added
+     * @return boolean value.
+     */
     @Override
     public boolean addAll(Collection<? extends E> c) {
+        addAll(size(), c);
         return false;
     }
 
