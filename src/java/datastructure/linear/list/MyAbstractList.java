@@ -13,6 +13,7 @@ import java.util.Collection;
 public abstract class MyAbstractList<E> implements MyList<E> {
     @Override
     public boolean add(E item) {
+        add(size(), item);
         return false;
     }
 
