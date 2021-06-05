@@ -1,16 +1,16 @@
-package java.util.list;
+package java.datastructure.linear.list;
 
 import java.util.Collection;
 
 /**
  * Created By: Naman Agarwal
  * User ID: naman2807
- * Package Name: java.util.list
+ * Package Name: java.datastructure.linear.list
  * Project Name: Java_DataStructureAndAlgorithm
  * Date: 04-06-2021
  */
 
-public interface List<E> {
+public interface MyList<E> {
 
     /**
      * Appends the specified element to the end of the list
