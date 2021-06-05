@@ -50,6 +50,11 @@ public class MyArrayList<E> extends MyAbstractList<E> {
         return true;
     }
 
+    /**
+     * Adds collection of values to ArrayList.
+     * @param c - list of items which is to be added
+     * @return boolean value.
+     */
     @Override
     public boolean addAll(Collection<? extends E> c) {
         return addAll(size(), c);
