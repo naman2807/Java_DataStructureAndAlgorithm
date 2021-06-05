@@ -39,6 +39,7 @@ public class MyArrayList<E> extends MyAbstractList<E> {
         }
         this.list[index] = item;
         size++;
+        return true;
     }
 
     @Override
