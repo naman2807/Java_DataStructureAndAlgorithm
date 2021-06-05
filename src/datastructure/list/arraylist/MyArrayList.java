@@ -49,10 +49,13 @@ public class MyArrayList<E> extends MyAbstractList<E> {
             size++;
             return true;
         }
-        for(int i = size() ; i > index; i--){
-            this.list[i] = this.list[i-1];
-        }
+//        for(int i = size() ; i > index; i--){
+//            this.list[i] = this.list[i-1];
+//        }
+        if (size() - index >= 0)
+            System.arraycopy(this.list, index, this.list, index + 1, size() - index);
         this.list[index] = item;
+        size++;
         return true;
     }
 
