@@ -62,7 +62,9 @@ public class MyArrayList<E> extends MyAbstractList<E> {
 
     @Override
     public boolean addAll(int index, Collection<? extends E> c) {
-        return super.addAll(index, c);
+        if(index < 0 || index > DEFAULT_CAPACITY ){
+            throw new ArrayIndexOutOfBoundsException("Invalid Index");
+        }
     }
 
     @Override
