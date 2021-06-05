@@ -1,5 +1,7 @@
 package java.datastructure.linear.list.arraylist;
 
+import java.datastructure.linear.list.MyAbstractList;
+
 /**
  * Created By: Naman Agarwal
  * User ID: naman2807
@@ -8,5 +10,5 @@ package java.datastructure.linear.list.arraylist;
  * Date: 05-06-2021
  */
 
-public class MyArrayList<E> {
+public class MyArrayList<E> extends MyAbstractList<E> {
 }
