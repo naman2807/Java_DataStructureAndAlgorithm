@@ -1,6 +1,6 @@
-package java.datastructure.linear.list.arraylist;
+package datastructure.list.arraylist;
 
-import java.datastructure.linear.list.MyAbstractList;
+import datastructure.list.MyAbstractList;
 import java.util.Arrays;
 import java.util.Collection;
 
@@ -14,12 +14,12 @@ import java.util.Collection;
 
 public class MyArrayList<E> extends MyAbstractList<E> {
 
-    private Object[] list;
+    private E[] list;
     private int DEFAULT_CAPACITY = 10;
     private int size = 0;
 
     public MyArrayList(){
-        this.list = new Object[DEFAULT_CAPACITY];
+        this.list = (E[]) new Object[DEFAULT_CAPACITY];
     }
 
     /**
@@ -44,6 +44,10 @@ public class MyArrayList<E> extends MyAbstractList<E> {
             throw new ArrayIndexOutOfBoundsException("Invalid Index");
         }else if(this.size == DEFAULT_CAPACITY){
             reallocate(10);
+        }else if(index == this.size){
+            this.list[index] = item;
+            size++;
+            return true;
         }
         for(int i = size() ; i > index; i--){
             this.list[i] = this.list[i-1];
@@ -88,7 +92,7 @@ public class MyArrayList<E> extends MyAbstractList<E> {
 
     @Override
     public E get(int index) {
-        return null;
+        return this.list[index];
     }
 
     @Override
