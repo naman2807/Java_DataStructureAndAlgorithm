@@ -11,12 +11,24 @@ import java.util.Collection;
  */
 
 public abstract class MyAbstractList<E> implements MyList<E> {
+
+    /**
+     * This method calls another overloaded method to add element.
+     * @param item - element to be added in list.
+     * @return boolean value
+     */
     @Override
     public boolean add(E item) {
         add(size(), item);
         return false;
     }
 
+    /**
+     * Adds element to the list.
+     * @param index - index at which the element has to be added.
+     * @param item - element which is to be added.
+     * @return boolean value
+     */
     @Override
     public boolean add(int index, E item) {
         return false;
