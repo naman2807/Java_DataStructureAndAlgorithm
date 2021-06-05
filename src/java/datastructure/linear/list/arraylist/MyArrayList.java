@@ -1,6 +1,7 @@
 package java.datastructure.linear.list.arraylist;
 
 import java.datastructure.linear.list.MyAbstractList;
+import java.util.Arrays;
 import java.util.Collection;
 
 /**
@@ -22,7 +23,10 @@ public class MyArrayList<E> extends MyAbstractList<E> {
 
     @Override
     public boolean add(E item) {
-        return super.add(item);
+        if(list.length == DEFAULT_CAPACITY){
+            reallocate(10);
+        }
+
     }
 
     @Override
@@ -97,7 +101,6 @@ public class MyArrayList<E> extends MyAbstractList<E> {
 
     private void reallocate(int size){
         this.DEFAULT_CAPACITY += size;
-        this.list = new Object[DEFAULT_CAPACITY];
-
+        this.list = Arrays.copyOf(this.list, DEFAULT_CAPACITY);
     }
 }
