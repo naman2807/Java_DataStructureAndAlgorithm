@@ -155,7 +155,8 @@ public class MyArrayList<E> extends MyAbstractList<E> {
     @Override
     public E set(int index, E item) {
         E value = this.list[index];
-        return null;
+        this.list[index] = item;
+
     }
 
     @Override
