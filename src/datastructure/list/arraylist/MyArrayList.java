@@ -80,8 +80,16 @@ public class MyArrayList<E> extends MyAbstractList<E> {
                 this.list[size] = e;
                 size++;
             });
+            return true;
         }
         reallocate(c.size());
+        for(int i = size(); i > index + size(); i--){
+            this.list[i] = this.list[i-1];
+        }
+        c.forEach(e -> {
+            this.list[size] = e;
+            size++;
+        });
         return true;
     }
 
