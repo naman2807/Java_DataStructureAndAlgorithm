@@ -74,6 +74,12 @@ public class MyArrayList<E> extends MyAbstractList<E> {
     public boolean addAll(int index, Collection<? extends E> c) {
         if(index < 0 || index > DEFAULT_CAPACITY ){
             throw new ArrayIndexOutOfBoundsException("Invalid Index");
+        }else if(index == size()){
+            reallocate(c.size());
+            c.forEach(e -> {
+                this.list[size] = e;
+                size++;
+            });
         }
         reallocate(c.size());
         return true;
