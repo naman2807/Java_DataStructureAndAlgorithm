@@ -6,6 +6,7 @@ import datastructure.list.MyList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.Optional;
 
 /**
  * Created By: Naman Agarwal
@@ -98,7 +99,13 @@ public class MyArrayList<E> extends MyAbstractList<E> {
 
     @Override
     public boolean contains(Object item) {
-        return false;
+        Optional<E> value = Arrays.stream(this.list).filter(e -> {
+            if(e.getClass() == item.getClass() && e.equals(item)){
+                return true;
+            }else {
+                return false;
+            }
+        }).findAny();
     }
 
     @Override
