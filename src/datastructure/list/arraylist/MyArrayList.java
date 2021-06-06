@@ -106,7 +106,8 @@ public class MyArrayList<E> extends MyAbstractList<E> {
 
     @Override
     public boolean containsAll(Collection<? extends E> c) {
-        return false;
+        boolean contain = false;
+        return contain;
     }
 
     @Override
