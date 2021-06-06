@@ -136,6 +136,7 @@ public class MyArrayList<E> extends MyAbstractList<E> {
 
     @Override
     public E remove(int index) {
+        E value = this.list[index];
         return null;
     }
 
