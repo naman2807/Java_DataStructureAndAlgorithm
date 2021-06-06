@@ -146,7 +146,8 @@ public class MyArrayList<E> extends MyAbstractList<E> {
     public boolean remove(Object item) {
         for (int i = 0; i < size; i++) {
             if(this.list[i].equals(null)){
-
+                this.list[i] = this.list[i+1];
+                size--;
             }
         }
         return false;
