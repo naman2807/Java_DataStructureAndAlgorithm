@@ -99,9 +99,12 @@ public class MyArrayList<E> extends MyAbstractList<E> {
 
     @Override
     public boolean contains(Object item) {
-        Optional<E> value = Arrays.stream(this.list).filter(e -> e.getClass() == item.getClass() && e.equals(item))
-                .findAny();
-        return value.isPresent();
+        for (E e : this.list) {
+            if(e.equals(item)){
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override
@@ -128,7 +131,7 @@ public class MyArrayList<E> extends MyAbstractList<E> {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return size() == 0;
     }
 
     @Override
