@@ -106,7 +106,13 @@ public class MyArrayList<E> extends MyAbstractList<E> {
 
     @Override
     public boolean containsAll(Collection<? extends E> c) {
-        boolean contain = false;
+        boolean contain = true;
+        for (E value : c) {
+            contain = contains(value);
+            if(!contain){
+                return contain;
+            }
+        }
         return contain;
     }
 
