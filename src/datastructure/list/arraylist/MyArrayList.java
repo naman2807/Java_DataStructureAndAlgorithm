@@ -1,6 +1,8 @@
 package datastructure.list.arraylist;
 
 import datastructure.list.MyAbstractList;
+import datastructure.list.MyList;
+
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
@@ -66,12 +68,12 @@ public class MyArrayList<E> extends MyAbstractList<E> {
      * @return boolean value.
      */
     @Override
-    public boolean addAll(Collection<? extends E> c) {
+    public boolean addAll(MyList<? extends E> c) {
         return addAll(size(), c);
     }
 
     @Override
-    public boolean addAll(int index, Collection<? extends E> c) {
+    public boolean addAll(int index, MyList<? extends E> c) {
         if(index < 0 || index > DEFAULT_CAPACITY ){
             throw new ArrayIndexOutOfBoundsException("Invalid Index");
         }else if(index == size()){
@@ -83,19 +85,15 @@ public class MyArrayList<E> extends MyAbstractList<E> {
             return true;
         }
         reallocate(c.size());
-        for(int i = size(); i > index + size(); i--){
-            this.list[i] = this.list[i-1];
-        }
         c.forEach(e -> {
-            this.list[size] = e;
-            size++;
+            add(index, e);
         });
         return true;
     }
 
     @Override
     public void clear() {
-
+        Arrays.stream(this.list).forEach(this::remove);
     }
 
     @Override

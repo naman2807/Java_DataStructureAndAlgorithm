@@ -42,7 +42,7 @@ public abstract class MyAbstractList<E> implements MyList<E> {
      * @return boolean value.
      */
     @Override
-    public boolean addAll(Collection<? extends E> c) {
+    public boolean addAll(MyList<? extends E> c) {
         addAll(size(), c);
         return false;
     }
@@ -54,7 +54,7 @@ public abstract class MyAbstractList<E> implements MyList<E> {
      * @return  UnsupportedOperationException
      */
     @Override
-    public boolean addAll(int index, Collection<? extends E> c) {
+    public boolean addAll(int index, MyList<? extends E> c) {
         throw new UnsupportedOperationException();
     }
 

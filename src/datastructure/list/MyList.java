@@ -37,7 +37,7 @@ public interface MyList<E> extends Iterable<E>{
      * @param c - list of items which is to be added
      * @return - boolean value.
      */
-    boolean addAll(Collection<? extends E> c);
+    boolean addAll(MyList<? extends E> c);
 
     /**
      * Inserts all of the elements in the specified collection into this list at the specified position
@@ -45,7 +45,7 @@ public interface MyList<E> extends Iterable<E>{
      * @param c - list of items which is to be added.
      * @return boolean value
      */
-    boolean addAll(int index, Collection<? extends E> c);
+    boolean addAll(int index, MyList<? extends E> c);
 
     /**
      * Removes all of the elements from this list
