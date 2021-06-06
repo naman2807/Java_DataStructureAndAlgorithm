@@ -64,7 +64,7 @@ public interface MyList<E> extends Iterable<E>{
      * @param c - list of elements which is to be checked.
      * @return Returns true if this list contains all of the elements of the specified collection.
      */
-    boolean containsAll(Collection<? extends E> c);
+    boolean containsAll(MyList<? extends E> c);
 
     /**
      * Compares the specified object with this list for equality.
