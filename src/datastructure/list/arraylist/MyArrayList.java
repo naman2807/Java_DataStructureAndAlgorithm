@@ -140,7 +140,7 @@ public class MyArrayList<E> extends MyAbstractList<E> {
         for(int i = index + 1; i < size; i++){
             this.list[i - 1] = this.list[i];
         }
-        return null;
+        return value;
     }
 
     @Override
