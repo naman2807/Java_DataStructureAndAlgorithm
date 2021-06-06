@@ -137,6 +137,9 @@ public class MyArrayList<E> extends MyAbstractList<E> {
     @Override
     public E remove(int index) {
         E value = this.list[index];
+        for(int i = index + 1; i < size; i++){
+            this.list[i - 1] = this.list[i];
+        }
         return null;
     }
 
