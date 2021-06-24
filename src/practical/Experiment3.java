@@ -68,7 +68,7 @@ public class Experiment3<E> {
             head = head.getNext();
             size--;
         }
-
+        return removedValue;
     }
 }
 
