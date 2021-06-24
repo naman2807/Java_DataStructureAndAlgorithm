@@ -42,6 +42,11 @@ public class Experiment6<E>{
             System.out.println("Stack is empty");
             return;
         }
+        top = (top).getNext();
+    }
+
+    public void display(){
+
     }
 }
 
