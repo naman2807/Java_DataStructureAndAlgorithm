@@ -14,7 +14,7 @@ public class Experiment3<E> {
     private int size = 0;
 
     public boolean add(E item) {
-//        add(size, item);
+        add(size, item);
         return true;
     }
 
