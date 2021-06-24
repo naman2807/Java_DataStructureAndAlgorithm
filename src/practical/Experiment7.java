@@ -11,4 +11,5 @@ package practical;
 public class Experiment7<E> {
     private int front;
     private int rear;
+    private int capacity;
 }
