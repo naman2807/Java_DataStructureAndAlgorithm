@@ -8,5 +8,6 @@ package practical;
  * Date: 24-06-2021
  */
 
-public class Experiment7 {
+public class Experiment7<E> {
+    private int front;
 }
