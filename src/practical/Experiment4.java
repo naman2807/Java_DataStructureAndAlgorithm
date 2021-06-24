@@ -14,4 +14,5 @@ public class Experiment4 {
 class CircularListNode<E> {
 
     private int data;
+    private CircularListNode<E> next;
 }
