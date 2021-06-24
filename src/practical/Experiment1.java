@@ -1,6 +1,8 @@
 package practical;
 
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 /**
  * Created By: Naman Agarwal
@@ -11,8 +13,9 @@ import java.util.Scanner;
  */
 
 public class Experiment1 {
-    private static Scanner scanner = new Scanner(System.in);
-    private static int[] array = new int[10];
+    private static final Scanner scanner = new Scanner(System.in);
+    private static final Set<Integer> duplicate = new HashSet<>();
+    private static final int[] array = new int[10];
     public static void main(String[] args) {
         System.out.println("Enter the elements: ");
         for (int i = 0; i < 10; i++) {
