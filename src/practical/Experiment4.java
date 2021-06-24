@@ -16,6 +16,7 @@ public class Experiment4<E> {
         CircularListNode<E> newNode = new CircularListNode<>(data);
         if(head == null){
             head = newNode;
+            tail = newNode;
         }
     }
 }
