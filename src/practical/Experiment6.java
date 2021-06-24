@@ -13,4 +13,5 @@ public class Experiment6{
 
 class StackNode<E> {
     private final E data;
+    private StackNode<E> next;
 }
