@@ -14,6 +14,10 @@ public class Experiment6<E>{
     public Experiment6() {
         this.top = null;
     }
+
+    public void push(E data){
+
+    }
 }
 
 class StackNode<E> {
