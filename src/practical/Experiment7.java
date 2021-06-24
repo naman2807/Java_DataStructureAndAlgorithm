@@ -9,10 +9,10 @@ package practical;
  */
 
 public class Experiment7<E> {
-    private int front;
+    private final int front;
     private int rear;
-    private int capacity;
-    private E[] queue;
+    private final int capacity;
+    private final E[] queue;
 
     public Experiment7(int c) {
         this.front = 0;
@@ -21,13 +21,18 @@ public class Experiment7<E> {
         this.queue = (E[]) new Object[capacity];
     }
 
-    public void queueEnqueue(E data){
-if(capacity == rear){
-    System.out.println("Queue is full.");
-    return;
-}else {
-    queue[rear] = data;
-    rear++;
-}
+    public void queueEnqueue(E data) {
+        if (capacity == rear) {
+            System.out.println("Queue is full.");
+            return;
+        } else {
+            queue[rear] = data;
+            rear++;
+        }
+        return;
+    }
+
+    public void queueDeque(){
+
     }
 }
