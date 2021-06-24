@@ -10,3 +10,9 @@ package practical;
 
 public class Experiment8{
 }
+class QueueNode<E> {
+    private E data;
+    private Node<E> next;
+
+
+}
