@@ -18,7 +18,7 @@ public class Experiment6<E>{
     public void push(E data){
         StackNode<E> temp = new StackNode<>(data);
         if(top == null){
-
+            top = temp;
         }
     }
 }
