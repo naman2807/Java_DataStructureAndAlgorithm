@@ -13,6 +13,9 @@ import java.util.LinkedList;
 public class Experiment2 {
     public static void main(String[] args) {
         System.out.println("Enter 4 numbers: ");
+        for (int i = 0; i < 4; i++) {
+
+        }
     }
     public static int getNumber(LinkedList<Integer> list){
         StringBuilder builder = new StringBuilder("");
