@@ -1,6 +1,7 @@
 package practical;
 
 import java.util.LinkedList;
+import java.util.Scanner;
 
 /**
  * Created By: Naman Agarwal
@@ -11,6 +12,7 @@ import java.util.LinkedList;
  */
 
 public class Experiment2 {
+    private static final Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         System.out.println("Enter 4 numbers: ");
         for (int i = 0; i < 4; i++) {
