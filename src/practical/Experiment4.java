@@ -40,7 +40,7 @@ public class Experiment4<E> {
         }else {
             while (currentNode != head){
                 System.out.println("" + currentNode.getData());
-
+                currentNode = currentNode.getNext();
             }
         }
     }
