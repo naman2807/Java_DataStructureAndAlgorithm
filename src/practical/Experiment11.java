@@ -68,3 +68,16 @@ public class Experiment11 {
 
 class Main {
     public static void main(String[] args) {
+        int[] brr = new int[]{30,22,25,50,22,65,22,90};
+        Experiment11 obj2 = new Experiment11(brr);
+        System.out.println("25 is present in given array or not :"
+                +obj2.binarySearch(25,0,brr.length-1));
+                System.out.println("Index of 22 is : "
+                        +obj2.binarySearchIndex(22,0,brr.length-1));
+                        System.out.println("Index of 90 is : "
+                                +obj2.binarySearchIndex(90,0,brr.length-1));
+                                System.out.println("65 is present in given array or not : "
+                                        +obj2.NonRecursiveBinarySearch(brr,65));
+    }
+
+}
