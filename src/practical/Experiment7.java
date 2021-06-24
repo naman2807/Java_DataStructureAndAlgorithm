@@ -35,6 +35,11 @@ public class Experiment7<E> {
     public void queueDeque(){
         if(front == rear){
             System.out.println("Empty Queue.");
+            return;
+        }else {
+            for (int i = 0; i < rear - 1; i++) {
+
+            }
         }
     }
 }
