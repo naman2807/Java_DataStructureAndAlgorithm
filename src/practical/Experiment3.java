@@ -49,6 +49,10 @@ public class Experiment3<E> {
     public E remove() {
         return remove(0);
     }
+
+    public E remove(int index) throws IndexOutOfBoundsException {
+
+    }
 }
 
 class Node<E>{
