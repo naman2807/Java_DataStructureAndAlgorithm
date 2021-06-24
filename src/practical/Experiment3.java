@@ -70,6 +70,10 @@ public class Experiment3<E> {
         }
         return removedValue;
     }
+
+    private E removeAfter(Node<E> previousNode) {
+
+    }
 }
 
 class Node<E>{
