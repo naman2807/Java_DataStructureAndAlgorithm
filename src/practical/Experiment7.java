@@ -20,4 +20,8 @@ public class Experiment7<E> {
         this.capacity = c;
         this.queue = (E[]) new Object[capacity];
     }
+
+    public void queueEnqueue(E data){
+
+    }
 }
