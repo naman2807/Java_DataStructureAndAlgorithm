@@ -92,7 +92,20 @@ public class Experiment3<E> {
 
     @Override
     public String toString() {
-
+        StringBuilder listString = new StringBuilder();
+        Node<E> currentNode = head;
+        listString.append("[");
+        for (int i = 0; i < size; i++) {
+            if (currentNode != null) {
+                listString.append(currentNode.getData());
+                currentNode = currentNode.getNext();
+            }
+            if (i < size - 1) {
+                listString.append(", ");
+            }
+        }
+        listString.append("]");
+        return listString.toString();
     }
 }
 
