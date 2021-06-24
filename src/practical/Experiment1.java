@@ -1,5 +1,7 @@
 package practical;
 
+import java.util.Scanner;
+
 /**
  * Created By: Naman Agarwal
  * User ID: naman2807
@@ -9,6 +11,7 @@ package practical;
  */
 
 public class Experiment1 {
+    private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         System.out.println("Enter the elements: ");
         for (int i = 0; i < 10; i++) {
