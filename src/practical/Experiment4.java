@@ -15,13 +15,16 @@ public class Experiment4<E> {
     public void add(E data){
         CircularListNode<E> newNode = new CircularListNode<>(data);
         if(head == null){
-            head = newNode;
-            tail = newNode;
-            newNode.setNext(head);
+            addFirst(newNode);
         }else {
-            tail.setNext(newNode);
-            tail = newNode;
+            addAfter(newNode);
         }
+    }
+
+    private void addFirst(CircularListNode<E> newNode) {
+        head = newNode;
+        tail = newNode;
+        newNode.setNext(head);
     }
 }
 
