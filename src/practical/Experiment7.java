@@ -51,6 +51,10 @@ public class Experiment7<E> {
         int i;
         if(front == rear){
             System.out.println("Empty");
+            return;
+        }
+        for(i = front; i<rear; i++){
+
         }
     }
 }
