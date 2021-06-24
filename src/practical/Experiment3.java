@@ -12,5 +12,5 @@ public class Experiment3{
 }
 
 class Node<E>{
-
+    private final E data;
 }
