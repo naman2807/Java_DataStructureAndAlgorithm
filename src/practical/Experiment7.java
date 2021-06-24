@@ -40,6 +40,14 @@ public class Experiment7<E> {
             for (int i = 0; i < rear - 1; i++) {
                 queue[i] = queue[i + 1];
             }
+            if(rear < capacity){
+                queue[rear] = null;
+                rear--;
+            }
         }
+    }
+
+    public void queueDisplay(){
+
     }
 }
