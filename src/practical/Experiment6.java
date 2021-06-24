@@ -18,4 +18,9 @@ class StackNode<E> {
     public StackNode(E data) {
         this.data = data;
     }
+
+    public StackNode(E data, StackNode<E> next) {
+        this.data = data;
+        this.next = next;
+    }
 }
