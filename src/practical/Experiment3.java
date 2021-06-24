@@ -55,6 +55,9 @@ public class Experiment3<E> {
             throw new IndexOutOfBoundsException();
         } else if (index == 0) {
             return removeFirst();
+        }else {
+            Node<E> previousNode = getNode(index - 1);
+            return removeAfter(previousNode);
         }
     }
 }
