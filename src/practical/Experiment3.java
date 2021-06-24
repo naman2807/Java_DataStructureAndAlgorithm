@@ -10,3 +10,7 @@ package practical;
 
 public class Experiment3{
 }
+
+class Node<E>{
+
+}
