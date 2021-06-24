@@ -10,3 +10,6 @@ package practical;
 
 public class Experiment9 {
 }
+class Node<E extends Comparable<E>>{
+
+}
