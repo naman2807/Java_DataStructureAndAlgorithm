@@ -17,6 +17,7 @@ public class Experiment4<E> {
         if(head == null){
             head = newNode;
             tail = newNode;
+            newNode.setNext(head);
         }
     }
 }
