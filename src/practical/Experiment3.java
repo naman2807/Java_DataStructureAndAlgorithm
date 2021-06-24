@@ -72,6 +72,7 @@ public class Experiment3<E> {
     }
 
     private E removeAfter(Node<E> previousNode) {
+        E removedValue = null;
 
     }
 }
