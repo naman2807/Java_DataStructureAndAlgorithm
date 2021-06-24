@@ -21,6 +21,6 @@ public class Experiment5<E> {
         this.stack = new Object[size];
     }
 
-
-
+    public boolean push(E item) {
+    }
 }
