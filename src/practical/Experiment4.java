@@ -15,4 +15,8 @@ class CircularListNode<E> {
 
     private int data;
     private CircularListNode<E> next;
+
+    public CircularListNode(int data) {
+        this.data = data;
+    }
 }
