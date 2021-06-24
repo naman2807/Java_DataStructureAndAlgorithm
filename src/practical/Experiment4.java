@@ -13,23 +13,23 @@ public class Experiment4<E> {
     private CircularListNode<E> tail;
 
     public void add(E data){
-
+        CircularListNode<E> node = new CircularListNode<>(data);
     }
 }
 
 class CircularListNode<E> {
-    private int data;
+    private E data;
     private CircularListNode<E> next;
 
-    public CircularListNode(int data) {
+    public CircularListNode(E data) {
         this.data = data;
     }
 
-    public int getData() {
+    public E getData() {
         return data;
     }
 
-    public void setData(int data) {
+    public void setData(E data) {
         this.data = data;
     }
 
