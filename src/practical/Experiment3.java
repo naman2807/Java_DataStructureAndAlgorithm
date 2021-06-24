@@ -60,6 +60,10 @@ public class Experiment3<E> {
             return removeAfter(previousNode);
         }
     }
+
+    private E removeFirst() {
+
+    }
 }
 
 class Node<E>{
