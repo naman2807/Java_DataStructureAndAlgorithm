@@ -22,5 +22,15 @@ public class Experiment5<E> {
     }
 
     public boolean push(E item) {
+        top = top + 1;
+        if (top >= MAX_SIZE) {
+            throw new IndexOutOfBoundsException("Stack Overflow!");
+        }
+        stack[top] = item;
+        return true;
     }
+
+
+
 }
+
