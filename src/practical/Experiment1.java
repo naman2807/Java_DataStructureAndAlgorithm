@@ -12,12 +12,13 @@ import java.util.Scanner;
 
 public class Experiment1 {
     private static Scanner scanner = new Scanner(System.in);
-    int[] array = new int[10];
+    private static int[] array = new int[10];
     public static void main(String[] args) {
         System.out.println("Enter the elements: ");
         for (int i = 0; i < 10; i++) {
             int number = scanner.nextInt();
             scanner.nextLine();
+            array[i] = number;
         }
     }
 }
