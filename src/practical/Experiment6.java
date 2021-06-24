@@ -8,52 +8,53 @@ package practical;
  * Date: 24-06-2021
  */
 
-public class Experiment6<E>{
+public class Experiment6<E> {
     private StackNode<E> top;
 
     public Experiment6() {
         this.top = null;
     }
 
-    public void push(E data){
+    public void push(E data) {
         StackNode<E> temp = new StackNode<>(data);
-        if(top == null){
+        if (top == null) {
             top = temp;
-        }else {
+        } else {
             top.setNext(temp);
             top = temp;
         }
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return top == null;
     }
 
-    public E peek(){
-        if(!isEmpty()){
+    public E peek() {
+        if (!isEmpty()) {
             return top.getData();
-        }else {
+        } else {
             return null;
         }
     }
 
-    public void pop(){
-        if(top == null){
+    public void pop() {
+        if (top == null) {
             System.out.println("Stack is empty");
             return;
         }
         top = (top).getNext();
     }
 
-    public void display(){
-if(top == null){
-    System.out.println("Stack is empty");
-}else {
-    StackNode<E> temp = top;
-    while (temp != null){
-        System.out.println(temp.getData());
-    }
-}
+    public void display() {
+        if (top == null) {
+            System.out.println("Stack is empty");
+        } else {
+            StackNode<E> temp = top;
+            while (temp != null) {
+                System.out.println(temp.getData());
+                temp = temp.getNext();
+            }
+        }
     }
 }
 
