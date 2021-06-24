@@ -16,12 +16,15 @@ public class Experiment6<E>{
     }
 
     public void push(E data){
-        StackNode<E> temp = new StackNode<>();
+        StackNode<E> temp = new StackNode<>(data);
+        if(top == null){
+
+        }
     }
 }
 
 class StackNode<E> {
-    private E data;
+    private final E data;
     private StackNode<E> next;
 
     public StackNode(E data) {
@@ -31,9 +34,6 @@ class StackNode<E> {
     public StackNode(E data, StackNode<E> next) {
         this.data = data;
         this.next = next;
-    }
-
-    public StackNode() {
     }
 
     public E getData() {
