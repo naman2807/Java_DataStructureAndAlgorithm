@@ -83,7 +83,11 @@ public class Experiment3<E> {
     }
 
     private Node<E> getNode(int index) {
-
+        Node<E> currentNode = head;
+        for (int i = 0; i < index; i++) {
+            currentNode = currentNode.getNext();
+        }
+        return currentNode;
     }
 }
 
