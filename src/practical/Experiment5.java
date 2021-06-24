@@ -37,6 +37,7 @@ public class Experiment5<E> {
         return (E) stack[top--];
     }
 
+    public E peek() {
 
 }
 
