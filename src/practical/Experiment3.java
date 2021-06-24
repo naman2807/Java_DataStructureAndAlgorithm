@@ -35,7 +35,9 @@ public class Experiment3<E> {
     }
 
     private void addFirst(E item) {
-
+        head = new Node<>(item, head);
+        // increase the size of the linked list
+        size++;
     }
 }
 
