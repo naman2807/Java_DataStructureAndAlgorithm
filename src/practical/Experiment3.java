@@ -81,6 +81,10 @@ public class Experiment3<E> {
         }
         return removedValue;
     }
+
+    private Node<E> getNode(int index) {
+
+    }
 }
 
 class Node<E>{
