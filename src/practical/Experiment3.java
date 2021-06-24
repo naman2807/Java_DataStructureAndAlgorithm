@@ -10,7 +10,7 @@ package practical;
 
 public class Experiment3<E> {
     public Node<E> head = null;
-
+    private int size = 0;
 }
 
 class Node<E>{
