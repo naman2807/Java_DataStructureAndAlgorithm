@@ -8,7 +8,8 @@ package practical;
  * Date: 24-06-2021
  */
 
-public class Experiment4 {
+public class Experiment4<E> {
+    private CircularListNode<E> head;
 }
 
 class CircularListNode<E> {
