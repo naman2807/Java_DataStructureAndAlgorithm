@@ -19,4 +19,20 @@ class CircularListNode<E> {
     public CircularListNode(int data) {
         this.data = data;
     }
+
+    public int getData() {
+        return data;
+    }
+
+    public void setData(int data) {
+        this.data = data;
+    }
+
+    public CircularListNode<E> getNext() {
+        return next;
+    }
+
+    public void setNext(CircularListNode<E> next) {
+        this.next = next;
+    }
 }
