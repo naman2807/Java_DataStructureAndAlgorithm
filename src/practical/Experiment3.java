@@ -8,7 +8,9 @@ package practical;
  * Date: 24-06-2021
  */
 
-public class Experiment3{
+public class Experiment3<E> {
+    public Node<E> head = null;
+
 }
 
 class Node<E>{
