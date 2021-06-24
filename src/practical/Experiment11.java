@@ -64,5 +64,7 @@ public class Experiment11 {
         }
         return false;
     }
-
 }
+
+class Main {
+    public static void main(String[] args) {
