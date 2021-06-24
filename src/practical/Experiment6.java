@@ -48,6 +48,8 @@ public class Experiment6<E>{
     public void display(){
 if(top == null){
     System.out.println("Stack is empty");
+}else {
+    StackNode<E> temp = top;
 }
     }
 }
