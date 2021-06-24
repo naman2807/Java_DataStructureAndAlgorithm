@@ -9,4 +9,7 @@ package practical;
  */
 
 public class Experiment2 {
+    public static void main(String[] args) {
+
+    }
 }
