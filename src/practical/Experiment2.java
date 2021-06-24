@@ -16,6 +16,7 @@ public class Experiment2 {
     }
     public static int getNumber(LinkedList<Integer> list){
         StringBuilder builder = new StringBuilder("");
+        list.forEach(builder::append);
     }
 
 }
