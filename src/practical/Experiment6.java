@@ -36,6 +36,10 @@ public class Experiment6<E>{
             return null;
         }
     }
+
+    public void pop(){
+
+    }
 }
 
 class StackNode<E> {
