@@ -32,6 +32,10 @@ public class Experiment4<E> {
         tail = newNode;
         newNode.setNext(head);
     }
+
+    public void display(){
+
+    }
 }
 
 class CircularListNode<E> {
