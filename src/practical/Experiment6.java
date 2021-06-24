@@ -23,4 +23,16 @@ class StackNode<E> {
         this.data = data;
         this.next = next;
     }
+
+    public E getData() {
+        return data;
+    }
+
+    public StackNode<E> getNext() {
+        return next;
+    }
+
+    public void setNext(StackNode<E> next) {
+        this.next = next;
+    }
 }
