@@ -9,12 +9,17 @@ package practical;
  */
 
 public class Experiment3<E> {
+
     public Node<E> head = null;
     private int size = 0;
 
     public boolean add(E item) {
 //        add(size, item);
         return true;
+    }
+
+    public void add(int index, E item) {
+
     }
 }
 
