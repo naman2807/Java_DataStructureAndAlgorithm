@@ -41,7 +41,9 @@ public class Experiment3<E> {
     }
 
     private void addAfter(Node<E> node, E item) {
-
+        node.setNext(new Node<>(item, node.getNext()));
+        // increase the size of the linked list
+        size++;
     }
 }
 
