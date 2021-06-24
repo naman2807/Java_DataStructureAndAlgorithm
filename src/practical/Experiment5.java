@@ -45,7 +45,7 @@ public class Experiment5<E> {
     }
 
     public boolean isEmpty() {
-
+        return top == -1;
     }
 
 }
