@@ -28,6 +28,10 @@ public class Experiment6<E>{
     public boolean isEmpty(){
         return top == null;
     }
+
+    public E peek(){
+
+    }
 }
 
 class StackNode<E> {
