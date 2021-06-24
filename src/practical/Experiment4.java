@@ -38,10 +38,11 @@ public class Experiment4<E> {
         if(head == null){
             System.out.println("List is empty.");
         }else {
-            while (currentNode != head){
+            do{
                 System.out.println("" + currentNode.getData());
                 currentNode = currentNode.getNext();
-            }
+            }while (currentNode != head);
+            System.out.println();
         }
     }
 }
