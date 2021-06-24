@@ -10,3 +10,7 @@ package practical;
 
 public class Experiment4 {
 }
+
+class CircularListNode<E> {
+
+}
