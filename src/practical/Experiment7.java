@@ -13,4 +13,11 @@ public class Experiment7<E> {
     private int rear;
     private int capacity;
     private E[] queue;
+
+    public Experiment7(int c) {
+        this.front = 0;
+        this.rear = 0;
+        this.capacity = c;
+        this.queue = (E[]) new Object[capacity];
+    }
 }
