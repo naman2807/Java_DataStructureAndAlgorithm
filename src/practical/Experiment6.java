@@ -21,7 +21,12 @@ public class Experiment6<E>{
             top = temp;
         }else {
             top.setNext(temp);
+            top = temp;
         }
+    }
+
+    public boolean isEmpty(){
+
     }
 }
 
