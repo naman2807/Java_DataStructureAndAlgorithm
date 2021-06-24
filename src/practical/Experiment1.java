@@ -20,5 +20,8 @@ public class Experiment1 {
             scanner.nextLine();
             array[i] = number;
         }
+        for (int i = 0; i < array.length; i++) {
+
+        }
     }
 }
