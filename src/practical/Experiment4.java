@@ -10,10 +10,10 @@ package practical;
 
 public class Experiment4<E> {
     private CircularListNode<E> head;
+    private CircularListNode<E> tail;
 }
 
 class CircularListNode<E> {
-
     private int data;
     private CircularListNode<E> next;
 
