@@ -30,6 +30,7 @@ public class Experiment5<E> {
         return true;
     }
 
+    public E pop() {
 
 
 }
