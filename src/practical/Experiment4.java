@@ -11,6 +11,10 @@ package practical;
 public class Experiment4<E> {
     private CircularListNode<E> head;
     private CircularListNode<E> tail;
+
+    public void add(E data){
+
+    }
 }
 
 class CircularListNode<E> {
