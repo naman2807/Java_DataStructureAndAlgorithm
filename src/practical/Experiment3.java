@@ -62,6 +62,7 @@ public class Experiment3<E> {
     }
 
     private E removeFirst() {
+        E removedValue = null;
 
     }
 }
