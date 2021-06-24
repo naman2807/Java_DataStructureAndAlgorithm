@@ -25,6 +25,8 @@ public class Experiment7<E> {
 if(capacity == rear){
     System.out.println("Queue is full.");
     return;
+}else {
+    queue[rear] = data;
 }
     }
 }
