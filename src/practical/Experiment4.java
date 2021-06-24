@@ -34,7 +34,7 @@ public class Experiment4<E> {
     }
 
     public void display(){
-
+        CircularListNode<E> currentNode = head;
     }
 }
 
