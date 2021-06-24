@@ -8,7 +8,8 @@ package practical;
  * Date: 24-06-2021
  */
 
-public class Experiment6{
+public class Experiment6<E>{
+    private StackNode<E> top;
 }
 
 class StackNode<E> {
