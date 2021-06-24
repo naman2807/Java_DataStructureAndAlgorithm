@@ -31,6 +31,11 @@ public class Experiment5<E> {
     }
 
     public E pop() {
+        if (isEmpty()) {
+            throw new NoSuchElementException("Stack Underflow!");
+        }
+        return (E) stack[top--];
+    }
 
 
 }
