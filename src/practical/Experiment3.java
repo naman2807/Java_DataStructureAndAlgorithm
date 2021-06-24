@@ -89,6 +89,11 @@ public class Experiment3<E> {
         }
         return currentNode;
     }
+
+    @Override
+    public String toString() {
+
+    }
 }
 
 class Node<E>{
