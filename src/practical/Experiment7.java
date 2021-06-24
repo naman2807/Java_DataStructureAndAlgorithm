@@ -27,6 +27,7 @@ if(capacity == rear){
     return;
 }else {
     queue[rear] = data;
+    rear++;
 }
     }
 }
