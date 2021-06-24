@@ -38,7 +38,9 @@ public class Experiment6<E>{
     }
 
     public void pop(){
+        if(top == null){
 
+        }
     }
 }
 
