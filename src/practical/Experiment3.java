@@ -63,6 +63,11 @@ public class Experiment3<E> {
 
     private E removeFirst() {
         E removedValue = null;
+        if (head != null) {
+            removedValue = head.getData();
+            head = head.getNext();
+            size--;
+        }
 
     }
 }
