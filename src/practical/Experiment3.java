@@ -25,6 +25,12 @@ public class Experiment3<E> {
         }else if (index == 0) {
             // the node is to be added at the first index, call the addFirst() method
             addFirst(item);
+        } else {
+            // the node is to be added somewhere after a given node
+            // firstly, get the node after which we have to add a new node.
+            Node<E> previousNode = getNode(index - 1);
+            // call the addAfter() method to add the node after 'previousNode'.
+            addAfter(previousNode, item);
         }
     }
 }
