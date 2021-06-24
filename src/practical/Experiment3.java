@@ -19,7 +19,10 @@ public class Experiment3<E> {
     }
 
     public void add(int index, E item) {
-
+        if (index < 0 || index > size) {
+            // throw the IndexOutOfBoundsException if the index given is incorrect.
+            throw new IndexOutOfBoundsException(index);
+        }
     }
 }
 
