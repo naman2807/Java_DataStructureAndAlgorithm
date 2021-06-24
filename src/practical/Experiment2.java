@@ -21,7 +21,9 @@ public class Experiment2 {
             scanner.nextLine();
             linkedList.add(number);
         }
+        System.out.println(getNumber(linkedList));
     }
+
     public static int getNumber(LinkedList<Integer> list){
         StringBuilder builder = new StringBuilder("");
         list.forEach(builder::append);
