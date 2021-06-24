@@ -37,6 +37,11 @@ public class Experiment4<E> {
         CircularListNode<E> currentNode = head;
         if(head == null){
             System.out.println("List is empty.");
+        }else {
+            while (currentNode != head){
+                System.out.println("" + currentNode.getData());
+
+            }
         }
     }
 }
