@@ -21,6 +21,12 @@ public class Experiment4<E> {
         }
     }
 
+    private void addAfter(CircularListNode<E> newNode) {
+        tail.setNext(newNode);
+        tail = newNode;
+        tail.setNext(head);
+    }
+
     private void addFirst(CircularListNode<E> newNode) {
         head = newNode;
         tail = newNode;
