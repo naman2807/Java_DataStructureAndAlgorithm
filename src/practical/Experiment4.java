@@ -20,6 +20,7 @@ public class Experiment4<E> {
             newNode.setNext(head);
         }else {
             tail.setNext(newNode);
+            tail = newNode;
         }
     }
 }
