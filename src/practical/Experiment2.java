@@ -17,7 +17,8 @@ public class Experiment2 {
     public static void main(String[] args) {
         System.out.println("Enter 4 numbers: ");
         for (int i = 0; i < 4; i++) {
-
+            int number = scanner.nextInt();
+            scanner.nextLine();
         }
     }
     public static int getNumber(LinkedList<Integer> list){
