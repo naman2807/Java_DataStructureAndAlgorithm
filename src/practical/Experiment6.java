@@ -10,6 +10,10 @@ package practical;
 
 public class Experiment6<E>{
     private StackNode<E> top;
+
+    public Experiment6() {
+        this.top = null;
+    }
 }
 
 class StackNode<E> {
