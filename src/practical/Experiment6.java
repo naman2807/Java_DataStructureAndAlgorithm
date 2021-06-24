@@ -30,7 +30,9 @@ public class Experiment6<E>{
     }
 
     public E peek(){
+        if(!isEmpty()){
 
+        }
     }
 }
 
