@@ -79,7 +79,7 @@ public class Experiment3<E> {
             previousNode.setNext(nodeToBeDeleted.getNext());
             size--;
         }
-
+        return removedValue;
     }
 }
 
