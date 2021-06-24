@@ -54,7 +54,7 @@ public class Experiment7<E> {
             return;
         }
         for(i = front; i<rear; i++){
-
+            System.out.println(queue[i]);
         }
     }
 }
