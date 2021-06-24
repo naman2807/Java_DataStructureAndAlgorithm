@@ -1,5 +1,7 @@
 package practical;
 
+import java.util.NoSuchElementException;
+
 /**
  * Created By: Naman Agarwal
  * User ID: naman2807
@@ -10,4 +12,6 @@ package practical;
 
 public class Experiment5<E> {
     private final int MAX_SIZE;
+    private int top;
+
 }
