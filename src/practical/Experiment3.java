@@ -33,6 +33,10 @@ public class Experiment3<E> {
             addAfter(previousNode, item);
         }
     }
+
+    private void addFirst(E item) {
+
+    }
 }
 
 class Node<E>{
