@@ -8,5 +8,6 @@ package practical;
  * Date: 24-06-2021
  */
 
-public class Experiment5 {
+public class Experiment5<E> {
+    private final int MAX_SIZE;
 }
