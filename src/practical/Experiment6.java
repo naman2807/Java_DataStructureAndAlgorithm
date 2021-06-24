@@ -50,6 +50,9 @@ if(top == null){
     System.out.println("Stack is empty");
 }else {
     StackNode<E> temp = top;
+    while (temp != null){
+        System.out.println(temp.getData());
+    }
 }
     }
 }
