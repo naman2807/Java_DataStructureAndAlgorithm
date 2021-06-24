@@ -15,5 +15,12 @@ public class Experiment5<E> {
     private int top;
     private Object[] stack;
 
+    public Experiment5(int size) {
+        this.MAX_SIZE = size;
+        this.top = -1;
+        this.stack = new Object[size];
+    }
+
+
 
 }
