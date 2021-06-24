@@ -39,6 +39,10 @@ public class Experiment3<E> {
         // increase the size of the linked list
         size++;
     }
+
+    private void addAfter(Node<E> node, E item) {
+
+    }
 }
 
 class Node<E>{
