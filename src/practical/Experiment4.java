@@ -13,9 +13,9 @@ public class Experiment4<E> {
     private CircularListNode<E> tail;
 
     public void add(E data){
-        CircularListNode<E> node = new CircularListNode<>(data);
+        CircularListNode<E> newNode = new CircularListNode<>(data);
         if(head == null){
-
+            head = newNode;
         }
     }
 }
