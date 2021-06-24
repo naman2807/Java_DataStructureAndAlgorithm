@@ -19,6 +19,7 @@ public class Experiment2 {
         for (int i = 0; i < 4; i++) {
             int number = scanner.nextInt();
             scanner.nextLine();
+            linkedList.add(number);
         }
     }
     public static int getNumber(LinkedList<Integer> list){
