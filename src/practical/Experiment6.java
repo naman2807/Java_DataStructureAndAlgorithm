@@ -32,6 +32,8 @@ public class Experiment6<E>{
     public E peek(){
         if(!isEmpty()){
             return top.getData();
+        }else {
+            return null;
         }
     }
 }
