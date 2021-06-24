@@ -45,6 +45,10 @@ public class Experiment3<E> {
         // increase the size of the linked list
         size++;
     }
+
+    public E remove() {
+        return remove(0);
+    }
 }
 
 class Node<E>{
