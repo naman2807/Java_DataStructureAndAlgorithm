@@ -10,9 +10,9 @@ package practical;
 
 public class Experiment7<E> {
     private final int front;
-    private int rear;
     private final int capacity;
     private final E[] queue;
+    private int rear;
 
     public Experiment7(int c) {
         this.front = 0;
@@ -32,28 +32,28 @@ public class Experiment7<E> {
         return;
     }
 
-    public void queueDeque(){
-        if(front == rear){
+    public void queueDeque() {
+        if (front == rear) {
             System.out.println("Empty Queue.");
             return;
-        }else {
+        } else {
             for (int i = 0; i < rear - 1; i++) {
                 queue[i] = queue[i + 1];
             }
-            if(rear < capacity){
+            if (rear < capacity) {
                 queue[rear] = null;
                 rear--;
             }
         }
     }
 
-    public void queueDisplay(){
+    public void queueDisplay() {
         int i;
-        if(front == rear){
+        if (front == rear) {
             System.out.println("Empty");
             return;
         }
-        for(i = front; i<rear; i++){
+        for (i = front; i < rear; i++) {
             System.out.println(queue[i]);
         }
     }
