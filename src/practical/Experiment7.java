@@ -22,6 +22,9 @@ public class Experiment7<E> {
     }
 
     public void queueEnqueue(E data){
-
+if(capacity == rear){
+    System.out.println("Queue is full.");
+    return;
+}
     }
 }
