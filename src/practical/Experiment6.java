@@ -19,6 +19,8 @@ public class Experiment6<E>{
         StackNode<E> temp = new StackNode<>(data);
         if(top == null){
             top = temp;
+        }else {
+            top.setNext(temp);
         }
     }
 }
