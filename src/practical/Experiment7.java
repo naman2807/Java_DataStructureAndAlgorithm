@@ -49,5 +49,8 @@ public class Experiment7<E> {
 
     public void queueDisplay(){
         int i;
+        if(front == rear){
+            System.out.println("Empty");
+        }
     }
 }
