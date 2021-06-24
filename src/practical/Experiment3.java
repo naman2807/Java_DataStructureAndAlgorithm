@@ -51,7 +51,9 @@ public class Experiment3<E> {
     }
 
     public E remove(int index) throws IndexOutOfBoundsException {
-
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException();
+        }
     }
 }
 
