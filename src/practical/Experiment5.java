@@ -38,6 +38,13 @@ public class Experiment5<E> {
     }
 
     public E peek() {
+        if (isEmpty()) {
+            throw new NoSuchElementException("Stack Underflow");
+        }
+        return (E) stack[top];
+    }
+
+
 
 }
 
