@@ -13,5 +13,7 @@ import java.util.NoSuchElementException;
 public class Experiment5<E> {
     private final int MAX_SIZE;
     private int top;
+    private Object[] stack;
+
 
 }
