@@ -8,5 +8,14 @@ package linkedlist.singlylinkedlist;
  * Date: 27-09-2021
  */
 
-public class MySinglyLinkedList {
+public class MySinglyLinkedList<T> {
+    private Node<T> head;
+
+    public void addToFront(T value){
+        Node<T> node = new Node<>(value);
+        node.setNext(head);
+        head = node;
+    }
+
+
 }
