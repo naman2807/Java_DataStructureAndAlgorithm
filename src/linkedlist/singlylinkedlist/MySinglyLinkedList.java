@@ -13,7 +13,7 @@ public class MySinglyLinkedList<T> {
     private int size = 0;
 
     // Time Complexity: O(1)
-    public void addToFront(T value){
+    public void addToFront(T value) {
         Node<T> node = new Node<>(value);
         node.setNext(head);
         head = node;
@@ -21,31 +21,31 @@ public class MySinglyLinkedList<T> {
     }
 
     // Time Complexity: O(1)
-    public Node<T> removeFromFront(){
-        if(head == null){
+    public T removeFromFront() {
+        if (head == null) {
             return null;
         }
         Node<T> removedValue = head;
         head = removedValue.getNext();
         removedValue.setNext(null);
         size--;
-        return removedValue;
+        return removedValue.getValue();
     }
 
-    public int getSize(){
+    public int getSize() {
         return size;
     }
 
     // Time Complexity: O(1)
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return head == null;
     }
 
     // Time Complexity: O(n)
-    public void printList(){
+    public void printList() {
         Node<T> current = head;
-        while (head != null){
-            System.out.print(head.getValue() + " -> ");
+        while (current != null) {
+            System.out.print(current.getValue() + " -> ");
             current = current.getNext();
         }
 
@@ -53,16 +53,17 @@ public class MySinglyLinkedList<T> {
     }
 
     // Time Complexity: O(n)
-    public void addToLast(T value){
+    public void addToLast(T value) {
         Node<T> node = new Node<>(value);
-        if(head == null){
+        if (head == null) {
             head = node;
             head.setNext(null);
+            size++;
             return;
         }
 
         Node<T> current = head;
-        while (current.getNext() != null){
+        while (current.getNext() != null) {
             current = current.getNext();
         }
         current.setNext(node);
@@ -72,17 +73,17 @@ public class MySinglyLinkedList<T> {
 
 
     // Time Complexity: O(n)
-    public Node<T> removeFromLast(){
-        if(head == null){
+    public T removeFromLast() {
+        if (head == null) {
             return null;
         }
         Node<T> previousValue = head;
-       for(int i = 0; i < size - 1; i++){
-           previousValue = previousValue.getNext();
-       }
+        for (int i = 0; i < size - 2; i++) {
+            previousValue = previousValue.getNext();
+        }
         Node<T> removedValue = previousValue.getNext();
         previousValue.setNext(null);
         size--;
-        return removedValue;
+        return removedValue.getValue();
     }
 }

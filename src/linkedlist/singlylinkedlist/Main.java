@@ -9,4 +9,29 @@ package linkedlist.singlylinkedlist;
  */
 
 public class Main {
+    public static void main(String[] args) {
+        MySinglyLinkedList<Integer> linkedList = new MySinglyLinkedList<>();
+        linkedList.addToFront(1);
+        linkedList.addToFront(2);
+        linkedList.addToFront(3);
+        linkedList.addToFront(4);
+        linkedList.addToFront(5);
+
+        linkedList.printList();
+
+        System.out.println();
+        System.out.println("Using addToLast method:");
+        linkedList.addToLast(10);
+        linkedList.printList();
+
+        System.out.println();
+        System.out.println("Using removeFromFront method");
+        linkedList.removeFromFront();
+        linkedList.printList();
+
+        System.out.println();
+        System.out.println("Using removeFromLast method");
+        linkedList.removeFromLast();
+        linkedList.printList();
+    }
 }
