@@ -17,5 +17,11 @@ public class MySinglyLinkedList<T> {
         head = node;
     }
 
+    public Node<T> removeFromFront(){
+        Node<T> removedValue = head;
+        head = removedValue.getNext();
+        removedValue.setNext(null);
+        return removedValue;
+    }
 
 }
