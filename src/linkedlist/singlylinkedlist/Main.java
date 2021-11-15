@@ -33,5 +33,10 @@ public class Main {
         System.out.println("Using removeFromLast method");
         linkedList.removeFromLast();
         linkedList.printList();
+
+        System.out.println();
+        System.out.println("Enter at specific position");
+        linkedList.insert(linkedList.getSize() + 1, 10);
+        linkedList.printList();
     }
 }

@@ -1,5 +1,7 @@
 package linkedlist.singlylinkedlist;
 
+import java.util.List;
+
 /**
  * Created By: Naman Agarwal
  * User ID: naman2807
@@ -85,5 +87,40 @@ public class MySinglyLinkedList<T> {
         previousValue.setNext(null);
         size--;
         return removedValue.getValue();
+    }
+
+    public void insert(int position, T value){
+        Node<T> node = new Node<>(value);
+        if(position == 1){
+            node.setNext(head);
+            head = node;
+        }else {
+            Node<T> previous = head;
+            for (int i = 0; i < position - 2; i++) {
+                previous = previous.getNext();
+            }
+
+            node.setNext(previous.getNext());
+            previous.setNext(node);
+            size++;
+        }
+    }
+
+    public void delete(int position){
+        Node<T> current = head;
+        for (int i = 0; i < position - 1; i++) {
+
+        }
+    }
+
+    public Node<T> getMiddleNode(){
+        Node<T> slowPtr = head;
+        Node<T> fastPtr = head;
+        while (fastPtr != null && fastPtr.getNext() != null){
+            slowPtr = slowPtr.getNext();
+            fastPtr = fastPtr.getNext().getNext();
+        }
+
+        return slowPtr;
     }
 }
