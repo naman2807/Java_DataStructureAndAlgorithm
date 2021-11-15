@@ -9,30 +9,30 @@ package linkedlist.doublylinkedlist;
  */
 
 public class ListNode<T> {
-    private ListNode<T> head;
-    private ListNode<T> tail;
+    private ListNode<T> next;
+    private ListNode<T> previous;
     private T data;
 
-    public ListNode(ListNode<T> head, ListNode<T> tail, T data) {
-        this.head = head;
-        this.tail = tail;
+    public ListNode(ListNode<T> next, ListNode<T> previous, T data) {
+        this.next = next;
+        this.previous = previous;
         this.data = data;
     }
 
-    public ListNode<T> getHead() {
-        return head;
+    public ListNode<T> getNext() {
+        return next;
     }
 
-    public void setHead(ListNode<T> head) {
-        this.head = head;
+    public void setNext(ListNode<T> next) {
+        this.next = next;
     }
 
-    public ListNode<T> getTail() {
-        return tail;
+    public ListNode<T> getPrevious() {
+        return previous;
     }
 
-    public void setTail(ListNode<T> tail) {
-        this.tail = tail;
+    public void setPrevious(ListNode<T> previous) {
+        this.previous = previous;
     }
 
     public T getData() {
