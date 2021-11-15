@@ -36,7 +36,7 @@ public class Main {
 
         System.out.println();
         System.out.println("Enter at specific position");
-        linkedList.insert(linkedList.getSize() + 1, 10);
+        linkedList.insertInBetween(linkedList.getSize() + 1, 10);
         linkedList.printList();
     }
 }

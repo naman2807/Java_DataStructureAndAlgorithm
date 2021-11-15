@@ -1,6 +1,6 @@
 package linkedlist.singlylinkedlist;
 
-import java.util.List;
+import java.util.NoSuchElementException;
 
 /**
  * Created By: Naman Agarwal
@@ -89,12 +89,12 @@ public class MySinglyLinkedList<T> {
         return removedValue.getValue();
     }
 
-    public void insert(int position, T value){
+    public void insertInBetween(int position, T value) {
         Node<T> node = new Node<>(value);
-        if(position == 1){
+        if (position == 1) {
             node.setNext(head);
             head = node;
-        }else {
+        } else {
             Node<T> previous = head;
             for (int i = 0; i < position - 2; i++) {
                 previous = previous.getNext();
@@ -106,21 +106,34 @@ public class MySinglyLinkedList<T> {
         }
     }
 
-    public void delete(int position){
-        Node<T> current = head;
-        for (int i = 0; i < position - 1; i++) {
-
+    public T deleteFromBetween(int position) {
+        if (position < 0 || position >= size) {
+            throw new NoSuchElementException("Invalid Index");
         }
+        if (position == 0) {
+            return removeFromFront();
+        }
+        if (position == size - 1) {
+            return removeFromLast();
+        }
+        Node<T> current = head;
+        Node<T> removedNode;
+        for (int i = 0; i < position - 1; i++) {
+            current = current.getNext();
+        }
+        removedNode = current.getNext();
+        current.setNext(current.getNext().getNext());
+        removedNode.setNext(null);
+        return removedNode.getValue();
     }
 
-    public Node<T> getMiddleNode(){
+    public Node<T> getMiddleNode() {
         Node<T> slowPtr = head;
         Node<T> fastPtr = head;
-        while (fastPtr != null && fastPtr.getNext() != null){
+        while (fastPtr != null && fastPtr.getNext() != null) {
             slowPtr = slowPtr.getNext();
             fastPtr = fastPtr.getNext().getNext();
         }
-
         return slowPtr;
     }
 }
