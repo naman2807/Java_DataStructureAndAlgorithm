@@ -1,6 +1,7 @@
 package stack;
 
 import java.util.NoSuchElementException;
+import java.util.stream.Stream;
 
 /**
  * Created By: Naman Agarwal
@@ -58,5 +59,9 @@ public class MyStack<T> {
             throw new NoSuchElementException("Stack is empty");
         }
         return top.getData();
+    }
+
+    public Stream<T> stream(){
+        return Stream.<T>builder().build();
     }
 }
