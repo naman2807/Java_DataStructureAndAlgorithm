@@ -11,30 +11,30 @@ import com.sun.source.tree.Tree;
  */
 
 public class TreeNode<T> {
-    private TreeNode<T> previous;
-    private TreeNode<T> next;
+    private TreeNode<T> left;
+    private TreeNode<T> right;
     private T data;
 
-    public TreeNode(TreeNode<T> previous, TreeNode<T> next, T data) {
-        this.previous = previous;
-        this.next = next;
+    public TreeNode(TreeNode<T> left, TreeNode<T> right, T data) {
+        this.left = left;
+        this.right = right;
         this.data = data;
     }
 
-    public TreeNode<T> getPrevious() {
-        return previous;
+    public TreeNode<T> getLeft() {
+        return left;
     }
 
-    public void setPrevious(TreeNode<T> previous) {
-        this.previous = previous;
+    public void setLeft(TreeNode<T> left) {
+        this.left = left;
     }
 
-    public TreeNode<T> getNext() {
-        return next;
+    public TreeNode<T> getRight() {
+        return right;
     }
 
-    public void setNext(TreeNode<T> next) {
-        this.next = next;
+    public void setRight(TreeNode<T> right) {
+        this.right = right;
     }
 
     public T getData() {
