@@ -16,7 +16,7 @@ public class ReverseStringUsingStack {
             characterMyStack.push(c);
         }
         for (int i = 0; i < characterMyStack.getLength(); i++) {
-            System.out.print(characterMyStack.pop().getData() + "");
+            System.out.print(characterMyStack.pop() + "");
         }
         System.out.println();
 //        characterMyStack.stream().forEach(System.out::print);

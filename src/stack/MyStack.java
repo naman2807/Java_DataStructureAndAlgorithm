@@ -35,25 +35,26 @@ public class MyStack<T> {
         length++;
     }
 
-    public StackNode<T> pop() {
-        if (isEmpty()) {
-            throw new NoSuchElementException("Stack is empty.");
-        }
-        StackNode<T> temp = top;
-        top = top.getNext();
-        temp.setNext(null);
-        return temp;
-    }
-
-//    public T pop() {
+//    public StackNode<T> pop() {
 //        if (isEmpty()) {
 //            throw new NoSuchElementException("Stack is empty.");
 //        }
-//        T data = top.getData();
-//        top = top.getNext();;
-//        return data;
+//        StackNode<T> temp = top;
+//        top = top.getNext();
+//        temp.setNext(null);
+//        return temp;
 //    }
-//
+
+    public T pop() {
+        if (isEmpty()) {
+            throw new NoSuchElementException("Stack is empty.");
+        }
+        T data = top.getData();
+        top = top.getNext();;
+        length--;
+        return data;
+    }
+
     public T peek(){
         if (isEmpty()){
             throw new NoSuchElementException("Stack is empty");
