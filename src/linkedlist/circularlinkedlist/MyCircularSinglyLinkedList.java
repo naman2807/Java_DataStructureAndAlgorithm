@@ -65,4 +65,20 @@ public class MyCircularSinglyLinkedList<T> {
         last.setNext(temp);
         length++;
     }
+
+    // Insert the node at the end of circular linked list
+    public void insertLast(T data){
+        Node<T> temp = new Node<>(data);
+        if (last == null){
+            last = temp;
+            last.setNext(temp);
+        }else {
+            temp.setNext(last.getNext());
+            last.setNext(temp);
+            last = temp;
+        }
+        length++;
+    }
+
+
 }
