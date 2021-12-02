@@ -53,4 +53,16 @@ public class MyCircularSinglyLinkedList<T> {
         }
         System.out.println(first.getValue());
     }
+
+    // Insert the node at the start of circular linked list
+    public void insertFirst(T data){
+        Node<T> temp = new Node<>(data);
+        if (last == null){
+            last = temp;
+        }else {
+            temp.setNext(last.getNext());
+        }
+        last.setNext(temp);
+        length++;
+    }
 }
